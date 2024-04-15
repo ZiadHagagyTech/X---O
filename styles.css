@@ -1,0 +1,108 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #F5F5F5;
+}
+
+#reset-button{
+  width: 100px;
+  height: 35px;
+  border-radius: 5px;
+  background-color: #FFAF45
+}
+
+#start-container,
+#game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#start-container {
+    margin-top: 50px;
+}
+
+#start-container h2 {
+    margin-bottom: 20px;
+}
+
+#start-container div {
+    margin-bottom: 10px;
+}
+
+#start-container label {
+    margin-right: 10px;
+}
+
+#start-container input[type="text"] {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+#start-container input[type="text"]:focus {
+    outline: none;
+    border-color: #4CAF50;
+}
+
+#start-container button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+#start-container button:hover,
+#reset-button:hover {
+    background-color: #45a049;
+}
+
+#game-container {
+    display: none;
+}
+
+#board {
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+#board td {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #333;
+    text-align: center;
+    font-size: 36px;
+    cursor: pointer;
+    background-color: #eee;
+    transition: background-color 0.3s ease;
+}
+
+#board td:hover {
+    background-color: #ddd;
+}
+
+#results-table {
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+#results-table th,
+#results-table td {
+    border: 1px solid #333;
+    padding: 8px;
+}
+
